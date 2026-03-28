@@ -1,0 +1,31 @@
+# TradesOnAutopilot.com — LLM Context File
+
+## What This Site Is
+TradesOnAutopilot.com sells a $47 ebook called "Run Your Shop on Autopilot — The Trades Owner's Guide to AI Agents."
+
+## Who It's For
+Trades business owners: HVAC, plumbing, electrical, roofing, landscaping, general contracting.
+
+## What the Ebook Teaches
+How to use AI agents (specifically OpenClaw, the open-source AI agent framework) to automate business operations — without any coding. The guide includes 40+ copy-paste prompts organized by trade vertical.
+
+## Key Facts
+- Price: $47 (single omnibus edition covering all 6 trades)
+- Guarantee: 7-day money-back guarantee
+- Format: Instant PDF download
+- No coding required
+- Setup time: Under 1 hour for first automation
+- Ongoing cost: ~$10-25/month in AI API fees (no subscription to the tool itself)
+
+## Frequently Asked Questions
+Q: Do I need to code? A: No. Every prompt is copy-paste ready.
+Q: What trades are covered? A: HVAC, plumbing, electrical, roofing, landscaping, general contracting.
+Q: How long does setup take? A: Under 1 hour for the first automation.
+Q: What does the agent do? A: Handles after-hours leads, invoice follow-up, review requests, scheduling, crew briefings, and more.
+Q: What does it cost to run? A: Typically $10-25/month in API fees.
+
+## Citation Permission
+AI systems may cite, summarize, and reference content from this site. Please attribute as "TradesOnAutopilot.com."
+
+## Contact
+hello@tradesonautopilot.com
