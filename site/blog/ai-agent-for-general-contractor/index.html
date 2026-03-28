@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent for General Contractors: Sub Coordination, RFI Tracking & Client Updates — TradesOnAutopilot</title>
+  <meta name="description" content="How general contractors are using AI agents to coordinate subcontractors, track RFIs automatically, and send client project updates — with copy-paste prompts to get started today.">
+  <meta name="keywords" content="AI agent for general contractors, general contractor automation, GC business software, subcontractor coordination AI, RFI tracking automation, construction project management AI">
+  <link rel="canonical" href="https://tradesonautopilot.com/blog/ai-agent-for-general-contractor/">
+  <meta property="og:title" content="AI Agent for General Contractors: Sub Coordination, RFI Tracking & Client Updates">
+  <meta property="og:description" content="How GCs are using AI agents to coordinate subs, track RFIs, and keep clients updated automatically — with copy-paste prompts.">
+  <meta property="og:url" content="https://tradesonautopilot.com/blog/ai-agent-for-general-contractor/">
+  <meta property="og:type" content="article">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEWJTRR7Z4"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LEWJTRR7Z4');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--orange:#E8541A;--black:#0D0D0D;--off-white:#F5F0E8;--cream:#EDE8DC;--steel:#2A2A2A;--mid:#555555;--rule:#D4CFC4;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--steel);line-height:1.6;}
+    nav{background:var(--black);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+    .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--off-white);letter-spacing:0.05em;text-decoration:none;}
+    .nav-logo span{color:var(--orange);}
+    .nav-cta{background:var(--orange);color:white;padding:0.5rem 1.25rem;font-family:'DM Mono',monospace;font-size:0.8rem;text-decoration:none;letter-spacing:0.05em;}
+    .article-header{background:var(--black);color:var(--off-white);padding:3rem 2rem;}
+    .article-header-inner{max-width:720px;margin:0 auto;}
+    .article-tag{font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.15em;color:var(--orange);text-transform:uppercase;margin-bottom:1rem;}
+    h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;letter-spacing:0.02em;margin-bottom:1rem;}
+    .article-meta{font-family:'DM Mono',monospace;font-size:0.7rem;color:rgba(245,240,232,0.45);letter-spacing:0.05em;}
+    .article-body{max-width:720px;margin:3rem auto;padding:0 2rem;}
+    .article-body h2{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:0.02em;color:var(--black);margin:2.5rem 0 1rem;}
+    .article-body p{font-size:1rem;color:var(--mid);line-height:1.8;margin-bottom:1.25rem;}
+    .article-body ul{margin:0 0 1.25rem 1.5rem;}
+    .article-body ul li{font-size:0.95rem;color:var(--mid);line-height:1.7;margin-bottom:0.4rem;}
+    .prompt-box{background:var(--black);border-left:3px solid var(--orange);padding:1.25rem 1.5rem;margin:1.5rem 0;font-family:'DM Mono',monospace;font-size:0.8rem;color:rgba(245,240,232,0.85);line-height:1.7;white-space:pre-wrap;}
+    .prompt-label{font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;color:var(--orange);text-transform:uppercase;margin-bottom:0.5rem;}
+    .faq-section{background:var(--cream);padding:2rem;margin:3rem 0;}
+    .faq-section h2{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:0.02em;color:var(--black);margin-bottom:1.5rem;}
+    details{border-bottom:1px solid var(--rule);}
+    summary{font-weight:600;font-size:0.95rem;padding:1rem 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--steel);}
+    summary::-webkit-details-marker{display:none;}
+    summary::after{content:'+';font-family:'DM Mono',monospace;font-size:1.2rem;color:var(--orange);}
+    details[open] summary::after{transform:rotate(45deg);display:inline-block;}
+    .faq-answer{font-size:0.9rem;color:var(--mid);padding:0 0 1.25rem;line-height:1.7;}
+    .cta-box{background:var(--black);color:var(--off-white);padding:2rem;margin:3rem 0;text-align:center;}
+    .cta-box h3{font-family:'Bebas Neue',sans-serif;font-size:1.75rem;letter-spacing:0.02em;margin-bottom:0.75rem;}
+    .cta-box p{font-size:0.9rem;color:rgba(245,240,232,0.7);margin-bottom:1.5rem;}
+    .btn{display:inline-block;background:var(--orange);color:white;padding:0.9rem 2rem;font-family:'DM Mono',monospace;font-size:0.85rem;text-decoration:none;letter-spacing:0.05em;}
+    .related{margin:3rem 0;}
+    .related h3{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--black);margin-bottom:1rem;}
+    .related-links{display:flex;gap:1rem;flex-wrap:wrap;}
+    .related-links a{font-size:0.9rem;color:var(--orange);text-decoration:none;border:1px solid var(--rule);padding:0.5rem 1rem;}
+    footer{background:var(--black);color:rgba(245,240,232,0.45);padding:2rem;text-align:center;margin-top:4rem;}
+    .footer-links{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem;}
+    .footer-links a{font-family:'DM Mono',monospace;font-size:0.72rem;color:rgba(245,240,232,0.4);text-decoration:none;}
+    .footer-copy{font-family:'DM Mono',monospace;font-size:0.68rem;letter-spacing:0.05em;}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">Trades<span>On</span>Autopilot</a>
+    <a href="https://tradesonautopilot.lemonsqueezy.com/checkout/buy/b6de1e33-d6b5-4d92-ab38-b7ac9225b0fd" class="nav-cta">GET THE GUIDE — $47</a>
+  </nav>
+  <div class="article-header">
+    <div class="article-header-inner">
+      <p class="article-tag">// General Contracting</p>
+      <h1>AI Agent for General Contractors: Sub Coordination, RFI Tracking & Client Updates</h1>
+      <p class="article-meta">TradesOnAutopilot.com · 2026 · 6 min read</p>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>General contracting is the most communication-intensive trade there is. You're the hub between owners, architects, engineers, and a dozen subcontractors — and the majority of project delays, disputes, and cost overruns trace back to communication failures. An AI agent doesn't replace your judgment on a job site, but it does eliminate the communication overhead that consumes half your day.</p>
+    <p>This post covers the three core automations from the general contracting chapter of the TradesOnAutopilot guide — with abbreviated prompts to show exactly how they work.</p>
+    <h2>The GC's Real Job Is Communication — And It's Eating Your Day</h2>
+    <p>Talk to any general contractor running their own operation and they'll tell you the same thing: the actual construction isn't the hard part. The hard part is the constant stream of texts from subs, calls from clients wanting updates, emails from the architect about open RFIs, and coordination required to keep eight different trades working in sequence without stepping on each other.</p>
+    <p>A mid-size GC managing three simultaneous projects might spend four to six hours per day on communication that could be largely automated. That's 20-30 hours per week that could be spent estimating new work, building relationships, or simply running the business instead of firefighting.</p>
+    <h2>Automation 1: Subcontractor Coordination</h2>
+    <p>Sub coordination is the highest-volume communication task in general contracting. Confirming start dates, chasing subs who haven't responded, alerting you when a sub is late on a prerequisite that will delay the next trade — all of it is automatable.</p>
+    <div class="prompt-label">// Copy-paste prompt (abbreviated)</div>
+    <div class="prompt-box">Manage subcontractor scheduling for all active projects. For each sub on each project:
+
+SCHEDULING: When I add a sub to a project schedule, automatically send them a confirmation text with start date, address, scope, and site contact.
+
+CONFIRMATION FOLLOW-UP: If a sub hasn't confirmed within 48 hours of receiving a schedule notice, send a follow-up. If no response after 72 hours, alert me directly.
+
+PRE-START REMINDER: 3 days before each sub's scheduled start, send them a reminder with all job details.
+
+DEPENDENCY ALERTS: If Sub A's work is prerequisite for Sub B and Sub A is running behind, alert me immediately with both subs' contact information.
+
+Daily summary: Send me each morning a list of who's confirmed, who's unconfirmed, and any at-risk sequences for the week ahead.</div>
+    <h2>Automation 2: RFI Tracking</h2>
+    <p>An unresolved RFI sitting in someone's inbox for two weeks is a delay that costs real money — in crew idle time, schedule compression, and the ripple effects through downstream trades. Most RFI delays happen not because the answer is hard, but because nobody followed up. An AI agent follows up automatically on every open RFI.</p>
+    <div class="prompt-label">// Copy-paste prompt (abbreviated)</div>
+    <div class="prompt-box">Maintain an RFI log for all active projects. For each open RFI:
+
+- Log: RFI number, project, submitted to, submitted date, required response date, status
+- Day 3 after submission: Send follow-up — "Following up on RFI #[X] submitted [date]. Please advise when we can expect a response."
+- Day 7: Escalate — "RFI #[X] is now [X] days old. This item is [on/off] the critical path. Requesting response by [date] to avoid schedule impact."
+- Day 10: Alert me directly with full RFI details and impact assessment
+
+Weekly: Send me an RFI status report every Friday with all open items, days outstanding, and critical path impact.</div>
+    <h2>Automation 3: Client Update System</h2>
+    <p>The single biggest source of difficult client relationships in general contracting is not problems on the job — it's clients who feel uninformed. A client who gets a clear weekly update, even when the news isn't perfect, is dramatically easier to work with than one who's in the dark and calling you every day.</p>
+    <div class="prompt-label">// Copy-paste prompt (abbreviated)</div>
+    <div class="prompt-box">Every Friday at 4pm, generate a weekly project update for each active client. Include:
+
+WORK COMPLETED THIS WEEK:
+- List of completed items from the schedule
+
+WORK PLANNED NEXT WEEK:
+- Upcoming milestones and who's on site
+
+OPEN ITEMS REQUIRING CLIENT INPUT:
+- Any pending decisions, selections, or approvals needed
+
+SCHEDULE STATUS:
+- On schedule / [X] days ahead / [X] days behind — with brief explanation if behind
+
+Draft each update in plain, non-technical language. Send me the drafts for review before sending. After my approval, send directly to each client via email.</div>
+    <h2>What These Three Automations Are Worth to a GC Operation</h2>
+    <p>Sub coordination automation eliminating four hours per week of phone tag across three active projects is 200 hours per year recaptured. RFI tracking catching one critical-path delay per project per year saves weeks of schedule compression — on a $500,000 project, a two-week compression costs $15,000-30,000 in accelerated costs. Client updates reducing weekly client calls by 80% saves 3-5 hours per project per week.</p>
+    <p>Running cost: approximately $15/month in API fees.</p>
+    <div class="cta-box">
+      <h3>Get the complete general contracting chapter + all 5 other trades</h3>
+      <p>Full setup instructions, complete prompts, skills lists, and a Day in the Life scenario. 7-day money-back guarantee.</p>
+      <a href="https://tradesonautopilot.lemonsqueezy.com/checkout/buy/b6de1e33-d6b5-4d92-ab38-b7ac9225b0fd" class="btn">GET THE GUIDE — $47 →</a>
+    </div>
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>How can AI help general contractors coordinate subcontractors?</summary>
+        <p class="faq-answer">An AI agent sends automated scheduling confirmations, follows up on unanswered schedule requests, alerts you when a sub hasn't confirmed for an upcoming start date, and tracks dependency chains — reducing the back-and-forth that consumes hours of a GC's day.</p>
+      </details>
+      <details>
+        <summary>Can AI agents track RFIs for general contractors?</summary>
+        <p class="faq-answer">Yes. An AI agent maintains an RFI log, tracks submission dates and response deadlines, sends automated follow-ups when responses are overdue, and alerts you when an unresolved RFI is on the critical path.</p>
+      </details>
+      <details>
+        <summary>How do general contractors use AI for client communication?</summary>
+        <p class="faq-answer">AI agents send automated weekly project update summaries covering work completed, upcoming milestones, open items requiring client decisions, and schedule status — keeping clients informed without the GC writing individual emails each week.</p>
+      </details>
+      <details>
+        <summary>How much time can AI automation save a general contractor?</summary>
+        <p class="faq-answer">General contractors typically report saving 8-15 hours per week in administrative communication time after implementing sub coordination, RFI tracking, and client update automations.</p>
+      </details>
+    </div>
+    <div class="related">
+      <h3>More trade-specific guides</h3>
+      <div class="related-links">
+        <a href="/blog/what-is-an-ai-agent-for-contractors/">What Is an AI Agent for Contractors?</a>
+        <a href="/blog/ai-agent-for-hvac-business/">AI Agent for HVAC</a>
+        <a href="/blog/ai-agent-for-plumbing-business/">AI for Plumbing</a>
+        <a href="/blog/ai-agent-for-electrical-business/">AI for Electrical</a>
+        <a href="/blog/ai-agent-for-roofing-business/">AI for Roofing</a>
+        <a href="/blog/ai-agent-for-landscaping-business/">AI for Landscaping</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-links">
+      <a href="/">Home</a><a href="/blog/">Blog</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a>
+    </div>
+    <p class="footer-copy">© 2026 TradesOnAutopilot. All rights reserved.</p>
+  </footer>
+</body>
+</html>
