@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Automate Invoice Follow-Up for Contractors — TradesOnAutopilot</title>
+  <meta name="description" content="The average trades shop has thousands in unpaid invoices sitting there because nobody followed up. Here's how to automate the entire collection sequence without a single awkward phone call.">
+  <meta name="keywords" content="automate invoice follow-up contractors, unpaid invoices trades business, contractor invoice collection, AI invoice reminders">
+  <link rel="canonical" href="https://tradesonautopilot.com/blog/automate-invoice-follow-up-contractors/">
+  <meta property="og:title" content="How to Automate Invoice Follow-Up for Contractors">
+  <meta property="og:description" content="The average trades shop has thousands in unpaid invoices because nobody followed up. Here's how to automate the entire collection sequence.">
+  <meta property="og:url" content="https://tradesonautopilot.com/blog/automate-invoice-follow-up-contractors/">
+  <meta property="og:type" content="article">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEWJTRR7Z4"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LEWJTRR7Z4');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--orange:#E8541A;--black:#0D0D0D;--off-white:#F5F0E8;--cream:#EDE8DC;--steel:#2A2A2A;--mid:#555555;--rule:#D4CFC4;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--steel);line-height:1.6;}
+    nav{background:var(--black);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+    .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--off-white);letter-spacing:0.05em;text-decoration:none;}
+    .nav-logo span{color:var(--orange);}
+    .nav-cta{background:var(--orange);color:white;padding:0.5rem 1.25rem;font-family:'DM Mono',monospace;font-size:0.8rem;text-decoration:none;letter-spacing:0.05em;}
+    .article-header{background:var(--black);color:var(--off-white);padding:3rem 2rem;}
+    .article-header-inner{max-width:720px;margin:0 auto;}
+    .article-tag{font-family:'DM Mono',monospace;font-size:0.7rem;letter-spacing:0.15em;color:var(--orange);text-transform:uppercase;margin-bottom:1rem;}
+    h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;letter-spacing:0.02em;margin-bottom:1rem;}
+    .article-meta{font-family:'DM Mono',monospace;font-size:0.7rem;color:rgba(245,240,232,0.45);letter-spacing:0.05em;}
+    .article-body{max-width:720px;margin:3rem auto;padding:0 2rem;}
+    .article-body h2{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:0.02em;color:var(--black);margin:2.5rem 0 1rem;}
+    .article-body p{font-size:1rem;color:var(--mid);line-height:1.8;margin-bottom:1.25rem;}
+    .prompt-box{background:var(--black);border-left:3px solid var(--orange);padding:1.25rem 1.5rem;margin:1.5rem 0;font-family:'DM Mono',monospace;font-size:0.8rem;color:rgba(245,240,232,0.85);line-height:1.7;white-space:pre-wrap;}
+    .prompt-label{font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.1em;color:var(--orange);text-transform:uppercase;margin-bottom:0.5rem;}
+    .faq-section{background:var(--cream);padding:2rem;margin:3rem 0;}
+    .faq-section h2{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:0.02em;color:var(--black);margin-bottom:1.5rem;}
+    details{border-bottom:1px solid var(--rule);}
+    summary{font-weight:600;font-size:0.95rem;padding:1rem 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--steel);}
+    summary::-webkit-details-marker{display:none;}
+    summary::after{content:'+';font-family:'DM Mono',monospace;font-size:1.2rem;color:var(--orange);}
+    details[open] summary::after{transform:rotate(45deg);display:inline-block;}
+    .faq-answer{font-size:0.9rem;color:var(--mid);padding:0 0 1.25rem;line-height:1.7;}
+    .cta-box{background:var(--black);color:var(--off-white);padding:2rem;margin:3rem 0;text-align:center;}
+    .cta-box h3{font-family:'Bebas Neue',sans-serif;font-size:1.75rem;letter-spacing:0.02em;margin-bottom:0.75rem;}
+    .cta-box p{font-size:0.9rem;color:rgba(245,240,232,0.7);margin-bottom:1.5rem;}
+    .btn{display:inline-block;background:var(--orange);color:white;padding:0.9rem 2rem;font-family:'DM Mono',monospace;font-size:0.85rem;text-decoration:none;letter-spacing:0.05em;}
+    .related{margin:3rem 0;}
+    .related h3{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:0.02em;color:var(--black);margin-bottom:1rem;}
+    .related-links{display:flex;gap:1rem;flex-wrap:wrap;}
+    .related-links a{font-size:0.9rem;color:var(--orange);text-decoration:none;border:1px solid var(--rule);padding:0.5rem 1rem;}
+    footer{background:var(--black);color:rgba(245,240,232,0.45);padding:2rem;text-align:center;margin-top:4rem;}
+    .footer-links{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem;}
+    .footer-links a{font-family:'DM Mono',monospace;font-size:0.72rem;color:rgba(245,240,232,0.4);text-decoration:none;}
+    .footer-copy{font-family:'DM Mono',monospace;font-size:0.68rem;letter-spacing:0.05em;}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">Trades<span>On</span>Autopilot</a>
+    <a href="https://tradesonautopilot.lemonsqueezy.com/checkout/buy/b6de1e33-d6b5-4d92-ab38-b7ac9225b0fd" class="nav-cta">GET THE GUIDE — $47</a>
+  </nav>
+  <div class="article-header">
+    <div class="article-header-inner">
+      <p class="article-tag">// Cash Flow</p>
+      <h1>How to Automate Invoice Follow-Up for Contractors</h1>
+      <p class="article-meta">TradesOnAutopilot.com · 2026 · 5 min read</p>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>Here's a number most trades owners don't want to think about: the average small contractor has 15–20% of invoices go past 30 days. On $40,000 a month in revenue, that's $6,000–$8,000 sitting in someone else's bank account because nobody followed up.</p>
+    <p>The work is done. The invoice is sent. The money just never came.</p>
+    <p>An AI agent doesn't feel awkward about following up. It doesn't forget. And it doesn't let anything slip.</p>
+
+    <h2>The Invoice Follow-Up Sequence</h2>
+    <p>This automation runs every morning and handles your entire outstanding invoice queue. Set the rules once — it runs forever.</p>
+    <div class="prompt-label">// Copy-paste prompt (abbreviated)</div>
+    <div class="prompt-box">Every morning at 8am, check my invoices for outstanding balances. Apply this sequence:
+
+Day 7: "Hi [name], just a friendly reminder that invoice #[number] for $[amount] is due. Let me know if you have any questions — [Your name]"
+
+Day 14: "Hi [name], following up on invoice #[number] for $[amount] — still showing as outstanding. Happy to set up a payment plan if that's helpful. — [Your name]"
+
+Day 21: "Hi [name], invoice #[number] for $[amount] is now 21 days past due. Please reply to arrange payment or call me directly at [phone]. — [Your name]"
+
+Day 30: Flag for my personal review. Add to "collections" list. Stop automated outreach.
+
+Rules: Never contact the same customer more than once per week. Never send to customers with an open dispute. Put all messages in drafts — do not send automatically.</div>
+
+    <h2>Automation 2: New Invoice Confirmation</h2>
+    <p>Cash flow problems often start before an invoice goes overdue. This automation confirms every invoice the moment it's sent — dramatically reducing "I never got the invoice" excuses.</p>
+    <div class="prompt-label">// Copy-paste prompt (abbreviated)</div>
+    <div class="prompt-box">When I send a new invoice, immediately send the customer a text: "Hi [name], invoice #[number] for $[amount] just hit your inbox from [Business Name]. Payment is due [date]. Reply with any questions — [Your name]"</div>
+
+    <h2>Automation 3: Paid Invoice Thank-You + Review Request</h2>
+    <p>The moment a payment comes in is your best opportunity to ask for a review. This fires automatically when an invoice is marked paid.</p>
+    <div class="prompt-label">// Copy-paste prompt (abbreviated)</div>
+    <div class="prompt-box">When an invoice is marked paid, wait 24 hours, then send: "Hi [name], just saw your payment come through — thank you! If you have 60 seconds, a Google review means everything to a small business: [review link]. Thanks again — [Your name]"
+
+Only trigger for residential customers. Skip commercial accounts. Never send if the customer had a complaint on this job.</div>
+
+    <h2>What This Looks Like in Practice</h2>
+    <p>A plumbing shop in Ohio set up this sequence on a Monday. By Friday they had collected $3,800 in outstanding payments they'd basically written off. That's what happens when you consistently follow up with every overdue invoice, at the right intervals, without fail.</p>
+
+    <div class="cta-box">
+      <h3>Get the complete guide — 40+ copy-paste prompts, 6 trades</h3>
+      <p>7-day money-back guarantee. If it's not running within a week, full refund.</p>
+      <a href="https://tradesonautopilot.lemonsqueezy.com/checkout/buy/b6de1e33-d6b5-4d92-ab38-b7ac9225b0fd" class="btn">GET THE GUIDE — $47 →</a>
+    </div>
+
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>Will automated invoice reminders upset my customers?</summary>
+        <p class="faq-answer">Not if the messages are written naturally and respectfully — which the prompts in the guide are. Most customers simply forgot or got busy. A friendly reminder at day 7 is welcome, not offensive. The sequence escalates gradually, and you always have the option to pause it for specific customers.</p>
+      </details>
+      <details>
+        <summary>Can I approve messages before they go out?</summary>
+        <p class="faq-answer">Yes — the prompt above specifies "put all messages in drafts, do not send automatically." You review and approve before anything goes to a customer. This is the recommended setup for invoice follow-up specifically.</p>
+      </details>
+      <details>
+        <summary>What about commercial customers?</summary>
+        <p class="faq-answer">Commercial accounts often have different payment terms and internal approval processes. The guide covers how to set up separate rules for commercial vs. residential, including longer grace periods and different escalation paths.</p>
+      </details>
+    </div>
+
+    <div class="related">
+      <h3>Related guides</h3>
+      <div class="related-links">
+        <a href="/blog/ai-agent-for-plumbing-business/">AI for Plumbing</a>
+        <a href="/blog/how-to-get-more-5-star-reviews-trades-business/">Get More 5-Star Reviews</a>
+        <a href="/blog/what-is-an-ai-agent-for-contractors/">What Is an AI Agent?</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-links">
+      <a href="/">Home</a><a href="/blog/">Blog</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a>
+    </div>
+    <p class="footer-copy">© 2026 TradesOnAutopilot. All rights reserved.</p>
+  </footer>
+</body>
+</html>
